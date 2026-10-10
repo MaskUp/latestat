@@ -1,0 +1,39 @@
+# Fail the build when anything in your stack reaches end of life, and check again every Monday,
+# so you hear about it even when nobody pushes code.
+#
+# Copy this file to .github/workflows/eol-check.yml in your repo, then edit STACK.
+# Product names are the ones in latestat.com URLs (latestat.com/php -> php).
+
+name: End-of-life check
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "17 13 * * 1"   # Mondays, 13:17 UTC
+  workflow_dispatch:
+
+jobs:
+  eol:
+    runs-on: ubuntu-latest
+    env:
+      STACK: "php:8.3,nodejs:22,postgresql:16,ubuntu:22.04"
+    steps:
+      - name: Check support status on latestat.com
+        run: |
+          report=$(curl -fsS "https://latestat.com/api/stack.json?s=${STACK}")
+          echo "$report" | jq -r '.items[] | "\(.status // .state)\t\(if .product then "\(.product) \(.version)" else .input end)\t\(.message)"'
+          {
+            echo "### Stack grade: $(echo "$report" | jq -r .grade)"
+            echo ""
+            echo "| Product | Version | Status | End of life |"
+            echo "| --- | --- | --- | --- |"
+            echo "$report" | jq -r '.items[] | "| \(.product // .input) | \(.version // "") | \(.status // .state) | \(.eol // "n/a") |"'
+            echo ""
+            echo "Full report: $(echo "$report" | jq -r .url)"
+          } >> "$GITHUB_STEP_SUMMARY"
+          eol=$(echo "$report" | jq '.summary.eol')
+          if [ "$eol" -gt 0 ]; then
+            echo "::error::$eol item(s) in your stack have reached end of life. See $(echo "$report" | jq -r .url)"
+            exit 1
+          fi

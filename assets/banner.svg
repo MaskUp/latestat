@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-label="latest@: latest versions and end-of-life dates for 480+ products">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1b2130" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b0d12" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0b0d12" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="400" rx="16" fill="#0b0d12"/>
+  <rect width="1280" height="400" rx="16" fill="url(#grid)"/>
+  <rect width="1280" height="400" rx="16" fill="url(#fade)"/>
+  <rect x="0" y="0" width="8" height="400" fill="#7c9cff"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="700">
+    <text x="72" y="150" font-size="96" fill="#e6e9ef">latest<tspan fill="#7c9cff">@</tspan></text>
+  </g>
+  <g font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <text x="76" y="212" font-size="34" font-weight="700" fill="#e6e9ef">Is your software still supported?</text>
+    <text x="76" y="256" font-size="22" fill="#9aa4b2">Latest versions and end-of-life dates for 480+ products.</text>
+    <text x="76" y="288" font-size="22" fill="#9aa4b2">In your browser, terminal, CI pipeline and calendar. Free, no key.</text>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="18" fill="#c9d1e0">
+    <rect x="76" y="320" width="252" height="40" rx="8" fill="#151a24" stroke="#2a3242"/>
+    <text x="96" y="346">$ curl <tspan fill="#7c9cff">latestat.com</tspan></text>
+    <rect x="342" y="320" width="120" height="40" rx="8" fill="#151a24" stroke="#2a3242"/>
+    <text x="362" y="346">JSON API</text>
+    <rect x="476" y="320" width="98" height="40" rx="8" fill="#151a24" stroke="#2a3242"/>
+    <text x="496" y="346">badges</text>
+    <rect x="588" y="320" width="76" height="40" rx="8" fill="#151a24" stroke="#2a3242"/>
+    <text x="608" y="346">iCal</text>
+    <rect x="678" y="320" width="66" height="40" rx="8" fill="#151a24" stroke="#2a3242"/>
+    <text x="698" y="346">RSS</text>
+  </g>
+
+  <!-- status card -->
+  <g transform="translate(860 72)" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <rect width="348" height="256" rx="14" fill="#11151d" stroke="#2a3242"/>
+    <text x="24" y="40" font-size="14" font-weight="700" letter-spacing="1.5" fill="#7d8796">STILL SUPPORTED?</text>
+    <g font-size="20" font-weight="600" fill="#e6e9ef">
+      <circle cx="30" cy="82" r="6" fill="#4ade80"/><text x="46" y="89">PHP 8.5</text>
+      <text x="324" y="89" text-anchor="end" font-size="16" font-weight="400" fill="#9aa4b2">until 2029</text>
+      <circle cx="30" cy="124" r="6" fill="#4ade80"/><text x="46" y="131">Node.js 24 LTS</text>
+      <text x="324" y="131" text-anchor="end" font-size="16" font-weight="400" fill="#9aa4b2">until 2028</text>
+      <circle cx="30" cy="166" r="6" fill="#fbbf24"/><text x="46" y="173">PHP 8.2</text>
+      <text x="324" y="173" text-anchor="end" font-size="16" font-weight="400" fill="#9aa4b2">security only</text>
+      <circle cx="30" cy="208" r="6" fill="#f87171"/><text x="46" y="215">Ubuntu 20.04</text>
+      <text x="324" y="215" text-anchor="end" font-size="16" font-weight="400" fill="#9aa4b2">end of life</text>
+    </g>
+  </g>
+</svg>

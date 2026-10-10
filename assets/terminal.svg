@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="388" viewBox="0 0 900 388" role="img" aria-label="Terminal: curl latestat.com/php prints PHP's latest version and support dates">
+  <rect width="900" height="388" rx="12" fill="#0b0d12"/>
+  <rect width="900" height="36" rx="12" fill="#151a24"/>
+  <rect y="24" width="900" height="12" fill="#151a24"/>
+  <circle cx="22" cy="18" r="6" fill="#f87171"/><circle cx="42" cy="18" r="6" fill="#fbbf24"/><circle cx="62" cy="18" r="6" fill="#4ade80"/>
+  <text x="450" y="23" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#7d8796">bash</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#c9d1e0">
+    <text x="24" y="70"><tspan fill="#4ade80">$</tspan> curl latestat.com/php</text>
+    <text y="104"><tspan x="24" font-weight="700" fill="#e6e9ef">PHP</tspan><tspan x="72">latest</tspan><tspan x="134" fill="#4ade80">8.5.11</tspan><tspan x="206" fill="#7d8796">released Sep 24, 2026</tspan></text>
+    <text y="138" fill="#7d8796"><tspan x="44">BRANCH</tspan><tspan x="124">LATEST</tspan><tspan x="214">STATUS</tspan><tspan x="394">END OF LIFE</tspan></text>
+    <text y="164"><tspan x="24" fill="#4ade80">●</tspan><tspan x="44">8.5</tspan><tspan x="124">8.5.11</tspan><tspan x="214" fill="#4ade80">active support</tspan><tspan x="394">Dec 31, 2029</tspan><tspan x="524" fill="#7d8796">in 3 years</tspan></text>
+    <text y="190"><tspan x="24" fill="#4ade80">●</tspan><tspan x="44">8.4</tspan><tspan x="124">8.4.26</tspan><tspan x="214" fill="#4ade80">active support</tspan><tspan x="394">Dec 31, 2028</tspan><tspan x="524" fill="#7d8796">in 2 years</tspan></text>
+    <text y="216"><tspan x="24" fill="#fbbf24">●</tspan><tspan x="44">8.3</tspan><tspan x="124">8.3.35</tspan><tspan x="214" fill="#fbbf24">security support</tspan><tspan x="394">Dec 31, 2027</tspan><tspan x="524" fill="#7d8796">in 1 year</tspan></text>
+    <text y="242"><tspan x="24" fill="#fbbf24">●</tspan><tspan x="44">8.2</tspan><tspan x="124">8.2.34</tspan><tspan x="214" fill="#fbbf24">security support</tspan><tspan x="394">Dec 31, 2026</tspan><tspan x="524" fill="#7d8796">in 2 months</tspan></text>
+    <text y="268"><tspan x="24" fill="#f87171">●</tspan><tspan x="44">8.1</tspan><tspan x="124">8.1.34</tspan><tspan x="214" fill="#f87171">end of life</tspan><tspan x="394">Dec 31, 2025</tspan><tspan x="524" fill="#7d8796">9 months ago</tspan></text>
+    <text y="294" fill="#7d8796"><tspan x="44">+ 13 older, all at https://latestat.com/php</tspan></text>
+    <text x="24" y="332"><tspan fill="#7d8796">Check yours:</tspan> <tspan fill="#7c9cff">curl latestat.com/php?v=8.3.4</tspan></text>
+    <text x="24" y="358"><tspan fill="#4ade80">$</tspan> ▍</text>
+  </g>
+</svg>
